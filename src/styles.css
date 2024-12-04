@@ -1,0 +1,102 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Modern font */
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f7fc; /* Light background color for the body */
+    color: #333; /* Dark text for good contrast */
+  }
+  
+  input, select {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px; /* Slightly larger padding for a more comfortable input field */
+    border: 1px solid #ccc; /* Soft border color */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Increased font size for easier readability */
+  }
+  
+  form {
+    background-color: #ffffff; /* White background for the form */
+    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Extra padding for a spacious look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    margin-bottom: 20px; /* Slightly larger space below the form */
+  }
+  
+  button {
+    background-color: #4CAF50; /* Green background for buttons */
+    color: white; /* White text on button */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px; /* Rounded button edges */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333; /* Dark text color for the heading */
+  }
+  
+  h2 {
+    color: #4CAF50; /* Green color for the subheadings */
+  }
+  
+  h3 {
+    color: #777; /* Lighter text for smaller headings */
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    background-color: #f9f9f9; /* Light gray background for list items */
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  li:nth-child(odd) {
+    background-color: #f1f1f1; /* Alternating background for list items */
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif; /* A modern font */
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  input, select {
+    width: 100%;
+    margin: 10px 0;
+    padding: 5px;
+  }
+  
+  form {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+  
+  /* Styling for the logo */
+  .logo {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #4CAF50; /* Green color for the logo */
+    font-family: 'Arial', sans-serif;
+  }
+  

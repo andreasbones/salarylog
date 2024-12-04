@@ -1,0 +1,65 @@
+<div class="container">
+    <h1>Salary Portal</h1>
+  
+    <div class="name-request">
+      <h2>Request Name</h2>
+      <form (ngSubmit)="onNameSubmit()">
+        <input 
+          type="text" 
+          [(ngModel)]="newName" 
+          name="name" 
+          placeholder="Enter Full Name" 
+          required
+        >
+        <button type="submit">Request Name</button>
+      </form>
+  
+      <h3>Requested Names</h3>
+      <ul>
+        <li *ngFor="let name of names">{{ name }}</li>
+      </ul>
+    </div>
+  
+    <div class="salary-entry">
+      <h2>Enter Salary</h2>
+      <form (ngSubmit)="onEntrySubmit()">
+        <select [(ngModel)]="selectedName" name="name" required>
+          <option value="">Select Name</option>
+          <option *ngFor="let name of names" [value]="name">{{ name }}</option>
+        </select>
+        
+        <input 
+          type="number" 
+          [(ngModel)]="salary" 
+          name="salary" 
+          placeholder="Enter Salary" 
+          step="0.01" 
+          required
+        >
+        
+        <input 
+          type="number" 
+          [(ngModel)]="year" 
+          name="year" 
+          placeholder="Enter Year" 
+          required
+        >
+        
+        <button type="submit">Save Entry</button>
+      </form>
+    </div>
+  
+    <div class="entries">
+      <h2>Saved Entries</h2>
+      <ul>
+        <li *ngFor="let entry of entries">
+          {{ entry.name }} - {{ entry.salary }} ({{ entry.year }})
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="logo">
+    GutnIT
+  </div>
+  

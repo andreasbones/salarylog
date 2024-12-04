@@ -1,0 +1,64 @@
+[debug] [2024-12-04T09:45:44.321Z] ----------------------------------------------------------------------
+[debug] [2024-12-04T09:45:44.323Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init
+[debug] [2024-12-04T09:45:44.323Z] CLI Version:   13.27.0
+[debug] [2024-12-04T09:45:44.323Z] Platform:      linux
+[debug] [2024-12-04T09:45:44.323Z] Node Version:  v22.12.0
+[debug] [2024-12-04T09:45:44.323Z] Time:          Wed Dec 04 2024 10:45:44 GMT+0100 (Central European Standard Time)
+[debug] [2024-12-04T09:45:44.323Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-12-04T09:45:44.326Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-04T09:45:44.327Z] > authorizing via signed-in user (bonesandreas@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/andreasbo/prosjekter/go/kurs/salarylog
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2024-12-04T09:46:21.120Z] Checked if tokens are valid: true, expires at: 1733308843571
+[debug] [2024-12-04T09:46:21.120Z] Checked if tokens are valid: true, expires at: 1733308843571
+[debug] [2024-12-04T09:46:21.121Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2024-12-04T09:46:21.121Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"salarylog1337","name":"salarylog1338"}
+[debug] [2024-12-04T09:46:22.571Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2024-12-04T09:46:22.571Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/cp.7144237411431034935"}
+[debug] [2024-12-04T09:46:22.572Z] Checked if tokens are valid: true, expires at: 1733308843571
+[debug] [2024-12-04T09:46:22.572Z] Checked if tokens are valid: true, expires at: 1733308843571
+[debug] [2024-12-04T09:46:22.572Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7144237411431034935 [none]
+[debug] [2024-12-04T09:46:23.502Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7144237411431034935 200
+[debug] [2024-12-04T09:46:23.502Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7144237411431034935 {"name":"operations/cp.7144237411431034935"}
+[debug] [2024-12-04T09:46:24.003Z] [Project Creation Poller] Retrying task index 0
+[debug] [2024-12-04T09:46:24.004Z] Checked if tokens are valid: true, expires at: 1733308843571
+[debug] [2024-12-04T09:46:24.004Z] Checked if tokens are valid: true, expires at: 1733308843571
+[debug] [2024-12-04T09:46:24.004Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7144237411431034935 [none]
+[debug] [2024-12-04T09:46:24.375Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7144237411431034935 200
+[debug] [2024-12-04T09:46:24.376Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7144237411431034935 {"name":"operations/cp.7144237411431034935"}
+[debug] [2024-12-04T09:46:25.376Z] [Project Creation Poller] Retrying task index 0
+[debug] [2024-12-04T09:46:25.376Z] Checked if tokens are valid: true, expires at: 1733308843571
+[debug] [2024-12-04T09:46:25.376Z] Checked if tokens are valid: true, expires at: 1733308843571
+[debug] [2024-12-04T09:46:25.376Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7144237411431034935 [none]
+[debug] [2024-12-04T09:46:25.909Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7144237411431034935 200
+[debug] [2024-12-04T09:46:25.909Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7144237411431034935 {"name":"operations/cp.7144237411431034935","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true,"ready":true},"done":true,"response":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.Project","projectNumber":"2646155236","projectId":"salarylog1337","lifecycleState":"ACTIVE","name":"salarylog1338","createTime":"2024-12-04T09:46:24.113235Z"}}
+[debug] [2024-12-04T09:46:25.910Z] Checked if tokens are valid: true, expires at: 1733308843571
+[debug] [2024-12-04T09:46:25.910Z] Checked if tokens are valid: true, expires at: 1733308843571
+[debug] [2024-12-04T09:46:25.910Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/salarylog1337:addFirebase [none]
+[debug] [2024-12-04T09:46:27.273Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/salarylog1337:addFirebase 403
+[debug] [2024-12-04T09:46:27.273Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/salarylog1337:addFirebase {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2024-12-04T09:46:27.274Z] Request to https://firebase.googleapis.com/v1beta1/projects/salarylog1337:addFirebase had HTTP Error: 403, The caller does not have permission
+[debug] [2024-12-04T09:46:27.562Z] FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/salarylog1337:addFirebase had HTTP Error: 403, The caller does not have permission
+    at responseToError (/usr/local/lib/node_modules/firebase-tools/lib/responseToError.js:52:12)
+    at RetryOperation._fn (/usr/local/lib/node_modules/firebase-tools/lib/apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[error] 
+[error] Error: Failed to add Firebase to Google Cloud Platform project. See firebase-debug.log for more info.
